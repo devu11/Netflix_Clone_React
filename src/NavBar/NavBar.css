@@ -1,0 +1,32 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    height: 5%;
+    background-color: #111;
+}
+
+.logo{
+    position: fixed;
+    left: 20px;
+    height: 90px;
+  display:flex ;
+  transform: translateY(-30px);
+  justify-content: space-between;
+}
+.signin-button{
+    position: fixed;
+    left: 1160px;
+    width: 60px;
+    height:25px ;
+    margin: 2.5px;
+    border-radius: 2px solid;
+}
+
+.english-button{
+    position: fixed;
+    left: 1060px;
+    width: 90px;
+    height: 30px;
+}

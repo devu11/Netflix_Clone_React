@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import NavBar from "./NavBar/NavBar";
+import Banner from "./Banner/Banner";
+import RowCards from "./RowCards/RowCards";
+import Constants from "./constants/constants";
+import {originals,action} from "./Urls"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <NavBar />
+      <Banner />
+      <RowCards Urls={originals} title='Netflix Originals' />
+      <RowCards Urls={action} title='Action Movies' isSmall/>
+      
     </div>
   );
 }
-
 export default App;
+
+
+
